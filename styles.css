@@ -1,0 +1,123 @@
+/* 基本重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.mainLogo {
+    font-family: Arial, sans-serif;
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+/* 页面容器 */
+.container {
+    font-family: Arial, sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+/* 页面头部 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(138, 185, 0);
+    color: white;
+    padding: 20px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .info h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header .info p {
+    font-size: 16px;
+}
+/* 确保 .profile 是相对定位 */
+.profile {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* 改为列布局 */
+    position: relative; /* 使 .uni 相对于 .profile 定位 */
+}
+
+/* 调整 .uni 的位置，确保它位于 .profile 的顶部居中 */
+.uni {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    position: absolute; /* 使用绝对定位 */
+    top: 0; /* 位于顶部 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 精确居中 */
+    margin-bottom: 100px;
+}
+
+/* 个人信息区域 */
+.profile .student-info {
+    display: flex;
+    justify-content: space-between;  /* 使子元素分布在两侧 */
+    align-items: center;
+    width: 100%;
+}
+
+.profile .student-info .student-photo {
+    width: 120px;
+    height: 160px;
+    border-radius: 8px;
+}
+
+.profile .student-info .details {
+    margin-left: 20px; /* 离左边20px */
+}
+
+.profile .student-info .details p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* 课程描述区域 */
+.course-description {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-description h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.course-description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 页脚 */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 30px;
+    border-radius: 8px;
+}
